@@ -11,7 +11,7 @@ const countDown = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve('hello world')
     }, 2000)
-    const success = false
+    const success = true
     if (success) {
         reject(new Error('Terminated'))
     } else {

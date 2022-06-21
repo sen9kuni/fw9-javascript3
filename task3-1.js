@@ -10,7 +10,7 @@ const namaKaryawan = (nama) => {
             } else {
                 reject(new Error('Anda bukan karyawan'))
             }
-        }, 3000)
+        }, 2000)
     })
 }
 

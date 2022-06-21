@@ -16,16 +16,17 @@ const cekHariKerja = (day) => {
 
 
 // then and catch
-const tryHari = cekHariKerja('minggu')
+// const tryHari = cekHariKerja('minggu')
 
-tryHari
-    .then((value) => console.log(`${value} adalah hari kerja`))
-    .catch(err => console.error(err))
+// tryHari
+//     .then((value) => console.log(`${value} adalah hari kerja`))
+//     .catch(err => console.error(err))
 
 
 
 // try and catch
 async function thisDay(day) {
+    console.log(`mengecek hari ${day}`)
     try {
         const hasil = await cekHariKerja(day)
         console.log(hasil + " adalah hari kerja")
@@ -35,5 +36,3 @@ async function thisDay(day) {
 }
 
 thisDay('senin')
-thisDay('selasa')
-thisDay('minggu')

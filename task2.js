@@ -15,7 +15,7 @@ const cb = (err, month) => {
     if (err) {
         console.log(err)
     }
-    const answer = month.map(value => console.log(value))
+    let monthAll = month.map(value => console.log(`month ${value}`))
 }
 
 getmonth(cb)
